@@ -7,12 +7,12 @@ import { getMessaging} from "firebase/messaging";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAHrEyFtRNHico1Psyq-6zjy6-4AwdQa4w",
-  authDomain: "next-firebase-9f470.firebaseapp.com",
-  projectId: "next-firebase-9f470",
-  storageBucket: "next-firebase-9f470.appspot.com",
-  messagingSenderId: "377365701522",
-  appId: "1:377365701522:web:ff3f48a7628efab785d74b"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
